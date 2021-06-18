@@ -1,0 +1,18 @@
+.menu {
+    display: none;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu{
+        display: none;
+    }
+}

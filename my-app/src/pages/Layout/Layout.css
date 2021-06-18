@@ -1,0 +1,19 @@
+
+.layout-container {
+    display: flex;
+}
+
+.layout-body {
+    width: 100%;
+    margin: 0 15px 15px 15px;
+}
+
+@media (max-width: 1024px) {
+    .layout-body {
+        margin: 0;
+    }
+    .layout-content {
+        padding: 1rem;
+        margin-bottom: 70px;
+    }
+}

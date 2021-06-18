@@ -1,0 +1,73 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    background: var(--secondary-green);
+    min-width: 100%;
+    -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+} 
+
+.app-title {
+    margin-left: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    color: white;
+    margin-left: auto
+   
+}
+.mobile_logo{
+    margin-left: 10px;
+    width: 50px;
+    padding: 5px;
+
+}
+.user-img {
+    border-radius: 50%;
+    margin: 0 20px;
+    width: 40px;
+    height: 40px;
+   
+}
+
+
+@media (max-width: 420px) {
+    .header-container {
+        justify-content: space-evenly;
+    }
+
+    .user-name {
+        display: none;
+    }
+
+    .app-title {
+    margin-left: 10px;
+    margin-right: 40px;
+    font-size: 14px;
+    }
+}
+@media screen and (max-width: 601px) {
+  .user-name {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .log-out {
+        display: none;
+    }
+    .mobile_logo{
+        display: none;
+    }
+
+}
+
+.exit-icon{
+  color:white;
+  margin-right: 10px;
+}
