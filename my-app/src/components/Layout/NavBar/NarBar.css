@@ -1,12 +1,11 @@
 .navbar-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: initial;
   position: relative;
-  width: 260px;
   z-index: 200;
-  min-height: 100vh;
-  height: auto;
+  height: 100;
   background: white;
 }
 
@@ -25,8 +24,7 @@ a {
 }
 
 .navlink {
-  padding: 1rem;
-  margin: 15px 0;
+  padding: 5px;
   display: flex;
   align-items: center;
   color: #495157;
@@ -42,7 +40,7 @@ a {
 }
 
 .active .navlink {
-  background: var(--secondary-green);
+  background: teal;
   color: white;
 }
 

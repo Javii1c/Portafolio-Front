@@ -1,0 +1,31 @@
+.display-container {
+    display: flex;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--secondary-gray);
+    margin-bottom: .575rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.display-header {
+    width: 100%;
+}
+.MuiIcon-root{
+    padding: 5px;
+}
+
+.display-header span {
+    color: var(--secondary-gray);
+    text-transform: capitalize;
+}
+
+.display-header-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 20px 0 0;
+    display: inline-block;
+}
+
+.display-header span:last-child {
+    display: block;
+    font-style: italic;
+}

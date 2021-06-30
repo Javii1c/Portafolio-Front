@@ -4,9 +4,6 @@ import roles from "../../../utils/utils";
 
 import { NavLink } from "react-router-dom";
 
-import Icon from "@material-ui/core/Icon";
-
-
 const Logo = () => {
   return (
     <img className="logo" src='http://imgfz.com/i/udkTJQO.jpeg' alt="Logo" />
@@ -31,13 +28,12 @@ const Links = (props) => {
   return (
     <ul>
       {views.map((view) => (
-        <li key={view.path}>
+        <li style = {{display: '-webkit-inline-box'}} key={view.path}>
           <NavLink
             to={view.path}
             onClick={view.path === "/logout" ? props.logout : null}
           >
             <div className="navlink">
-              <Icon>{view.icon}</Icon>
               <span className="navlink-label">{view.label}</span>
             </div>
           </NavLink>
@@ -53,7 +49,6 @@ const Navbar = (props) => {
   return (
     <>
       <nav className={"navbar-container " + showNav}>
-        <Logo />
         <Links logout={props.logout} />
       </nav>
     </>
