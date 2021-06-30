@@ -1,8 +1,9 @@
 import React, { useState, useEffect} from 'react';
 
 import enpoints from '../../api/enpoints'
-
+import DisplayTitle from '../../components/Common/DisplayTitle/DisplayTitle'
 import Loader from '../../components/UI/Loader/Loader';
+import HistorialComponents from '../../components/AdminComponents/HistorialComponets/HistorialComponents';
 
 const AdminHistorial = () => {
     const [data, setData] = useState([]);
@@ -35,7 +36,9 @@ const AdminHistorial = () => {
             {isLoading
                 ? <Loader />
                 : <>
-                   
+                   <DisplayTitle
+                   title = {'HISTORIAL'}/>
+                   <HistorialComponents/>
                 </>
             }
 
