@@ -29,14 +29,6 @@ const Layout = (props) => {
             {isLoggedIn && user ?
                 <>
                     <div className='layout-container'>
-                        <Backdrop
-                            show={show}
-                            toggleShow={menuHandler}
-                        />
-                        <Navbar
-                            show={show}
-                            logout={logoutHandler}
-                        />
 
                         <div className='layout-body'>
                             <Header
@@ -47,6 +39,15 @@ const Layout = (props) => {
                                 employeeId={user.employeeId}
                                 logout={logoutHandler}
                             />
+
+                        <Backdrop
+                            show={show}
+                            toggleShow={menuHandler}
+                        />
+                        <Navbar
+                            show={show}
+                            logout={logoutHandler}
+                        />
                             <div className='layout-content'>
                                 {props.children}
                             </div>
