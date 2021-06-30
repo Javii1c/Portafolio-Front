@@ -1,8 +1,9 @@
 import React, { useState, useEffect} from 'react';
 
 import enpoints from '../../api/enpoints'
-
+import DisplayTitle from '../../components/Common/DisplayTitle/DisplayTitle'
 import Loader from '../../components/UI/Loader/Loader';
+import UserTables from '../../components/AdminComponents/UsersTables/UserTables';
 
 const AdminUsuarios = () => {
     const [data, setData] = useState([]);
@@ -35,10 +36,12 @@ const AdminUsuarios = () => {
             {isLoading
                 ? <Loader />
                 : <>
-                   
+                <DisplayTitle
+                   title = {'USUARIOS'}/>
+                   <UserTables/>
                 </>
-            }
 
+            }
 
         </>
     )
