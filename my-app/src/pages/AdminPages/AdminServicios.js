@@ -1,8 +1,9 @@
 import React, { useState, useEffect} from 'react';
 
 import enpoints from '../../api/enpoints'
-
+import DisplayTitle from '../../components/Common/DisplayTitle/DisplayTitle'
 import Loader from '../../components/UI/Loader/Loader';
+import ServiceTables from '../../components/AdminComponents/ServiceTables/ServicesTables'
 
 const AdminServicios = () => {
     const [data, setData] = useState([]);
@@ -35,7 +36,9 @@ const AdminServicios = () => {
             {isLoading
                 ? <Loader />
                 : <>
-                   
+                     <DisplayTitle
+                   title = {'SERVICIOS'}/>
+                   <ServiceTables/>
                 </>
             }
 
