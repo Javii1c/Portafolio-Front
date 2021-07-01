@@ -1,0 +1,67 @@
+.icons{
+    height: 40px;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 4;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.icons:hover {
+    color: var(--secondary-blue);
+}
+
+.button-search {
+    border: none;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00897B;
+    color: white;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button-search:hover {
+    background: var(--secondary-blue);
+}
+
+@media screen and (max-width: 600px) {
+    .button-search {
+        width: 100%;
+    }
+    .date-form-start {
+        width: 135px;
+        margin-left: 100px;
+    }
+    .date-form-end {
+        width: 135px;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .button-search{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1375px) {
+    .date-form-start {
+        width: 135px;
+        margin-left: 100px;
+    }
+    .date-form-end {
+        width: 135px;
+        margin-left: 100px;
+    }
+
+}

@@ -1,0 +1,16 @@
+.error_content {
+  display: flex;
+  justify-content: center!important;
+  align-items: center!important;
+  width: 100%!important;
+  background-image: url("http://imgfz.com/i/91CGA73.png");
+  background-repeat: repeat;
+  height: 50%!important;
+  overflow: hidden;
+}
+
+.error-image {
+  width: 100%!important;
+  height: 50%!important;
+}
+
