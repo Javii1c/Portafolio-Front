@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 
 import enpoints from '../../api/enpoints'
-import DisplayTitle from '../../components/Common/DisplayTitle/'
+import DisplayTitle from '../../components/Common/DisplayTitle/DisplayTitle'
 import Loader from '../../components/UI/Loader/Loader';
 
 const AdminHome = () => {
